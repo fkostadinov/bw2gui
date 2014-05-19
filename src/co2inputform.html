@@ -1,55 +1,35 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Carbon Food Print Input Form</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	
 	<h1>Carbon Food Print Input Form</h1>
 </head>
 <body>
 
-	<form class="form-horizontal">
-	<fieldset>
+	<div class="container">
 
-	<!-- Form Name -->
-	<legend>Form Name</legend>
+		<h2>Hello Carbon!</h2>
 
-	<!-- Text input-->
-	<div class="control-group">
-	  <label class="control-label" for="nameGerman">Name (Deutsch)</label>
-	  <div class="controls">
-		<input id="nameGerman" name="nameGerman" type="text" placeholder="Name" class="input-xlarge" required="">
-		
-	  </div>
+		<form class="form-horizontal" id="inData">	
+			<div class="input-group">
+				<span class="input-group-addon">First Name</span>
+				<input type="text" class="form-control" name="firstName" placeholder="e.g. John">
+			</div>
+			
+			<div class="input-group">
+				<span class="input-group-addon">Family Name</span>
+				<input type="text" class="form-control" name="familyName" placeholder="e.g. Johnsson">
+			</div>
+			
+			<button class="btn" id="submitbutton">Submit</button>
+		</form>
+	
 	</div>
-
-	<!-- Text input-->
-	<div class="control-group">
-	  <label class="control-label" for="nameEnglish">Name (English)</label>
-	  <div class="controls">
-		<input id="nameEnglish" name="nameEnglish" type="text" placeholder="Name" class="input-xlarge">
-		
-	  </div>
-	</div>
-
-	<!-- Text input-->
-	<div class="control-group">
-	  <label class="control-label" for="ingredientId">ID</label>
-	  <div class="controls">
-		<input id="ingredientId" name="ingredientId" type="text" placeholder="12345" class="input-xlarge" required="">
-		
-	  </div>
-	</div>
-
-	<!-- Text input-->
-	<div class="control-group">
-	  <label class="control-label" for="tags">Tags</label>
-	  <div class="controls">
-		<input id="tags" name="tags" type="text" placeholder="" class="input-xlarge" required="">
-		
-	  </div>
-	</div>
-
-	</fieldset>
-	</form>
-
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/co2inputform.js"></script>
 </body>
 </html>
